@@ -3,7 +3,7 @@
 #include "vm.h"
 #include "frame.h"
 
-int main() {
+int main(void) {
 	class_t* class = load_class("../tests/Add.class");
 	class_instance_t* instance = instance_new(class);
 	jvm_t jvm = jvm_new(instance);
